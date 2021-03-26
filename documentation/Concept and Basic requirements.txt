@@ -1,0 +1,37 @@
+optimus time: reloaded
+A single player attempt at a multiplayer shit show
+
+Okay, so I want to build a modular user time tracking system.
+
+This system should have the following core components:
+	Time core
+	User core
+	Tracker core
+	Plugin core
+	
+The core components	are defined as:
+Time core:
+	manages time primitives.
+	
+User core:
+	tracks users
+	enables user addition/removal
+	authenticates users
+	
+Tracker core:
+	logs users time in and time out
+	Can report user time in / out information
+	
+Configuration core:
+	Responsible for the handling of configuration options
+	Exists to provide a single unified configuration location
+	
+Initialization core:
+	The initialization core is responsible for starting the application.
+	The core loads itself, which then loads the configuration core.	
+	
+Plugin core:
+	
+	
+In order to provide a whole working package the system will require additional plugins.
+These plugins will be included as git sub-modules, but are also provided as potential reference designs

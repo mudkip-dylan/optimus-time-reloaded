@@ -1,0 +1,19 @@
+The time core aims to track individual time stamps.
+
+Time stamps are the basic unit of which all other time based calculations occur
+
+Time stamps should be recorded via system report of unix epoch time.
+
+The rationale behind this descion is to enable system portability due to the ubiquity of epoch time
+
+The rest of the time calculations should then be handled by the module
+
+The time core shall provide the following operations:
+1. current time -- fetches the current system time in
+2. time translation -- translates epoch time to a human readable date/time
+3. time delta calculation -- epoch count between time stamps
+4. delta translation -- translates epoch deltas to human readable format
+
+In order to support translation, the core will also provide a timezone to do translation against.
+
+This option will be handled by configuration core
